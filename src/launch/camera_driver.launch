@@ -1,0 +1,18 @@
+<launch>
+    <!-- Parametrização dos argumentos -->
+    <arg name="camera_index" default="0" />
+    <arg name="frame_rate" default="30" />
+
+    <!-- Parâmetros globais que podem ser alterados via argumentos -->
+    <param name="camera_index" value="$(arg camera_index)" />
+    <param name="frame_rate" value="$(arg frame_rate)" />
+
+    <!-- Inicialização do nó ROS do driver -->
+    <node 
+        name="camera_driver_node" 
+        pkg="camera_driver" 
+        type="ros_driver_camera.py" 
+        output="screen"
+        launch-prefix="bash -c 'sleep 2; exec '" 
+    />
+</launch>
