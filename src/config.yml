@@ -1,0 +1,13 @@
+# Parametros da câmera
+camera_index: 0
+frame_rate: 15
+resolution_width: 800
+resolution_height: 600
+
+# Local onde salvar fotos
+photos_dir: "~/Pictures/camera_photos/"
+# Local onde salvar videos
+videos_dir: "~/Videos/camera_videos/"
+
+# Tempo de gravação (em segundos)
+record_duration: 10
