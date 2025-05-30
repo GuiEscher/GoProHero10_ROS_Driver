@@ -10,7 +10,7 @@ Inicialmente, conecte a GoPro Hero 10 ao computador via cabo USB. Para melhor es
 2. Instalação do Driver
 Clone o repositório gopro_as_webcam_on_linux:
 
--> git clone https://github.com/jschmid1/gopro_as_webcam_on_linux
+> git clone https://github.com/jschmid1/gopro_as_webcam_on_linux
 -> cd gopro_as_webcam_on_linux
 -> sudo ./install.sh
 
