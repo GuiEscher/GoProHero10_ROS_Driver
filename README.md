@@ -11,23 +11,23 @@ Inicialmente, conecte a GoPro Hero 10 ao computador via cabo USB. Para melhor es
 Clone o repositório gopro_as_webcam_on_linux:
 
 > git clone https://github.com/jschmid1/gopro_as_webcam_on_linux
--> cd gopro_as_webcam_on_linux
--> sudo ./install.sh
+> cd gopro_as_webcam_on_linux
+> sudo ./install.sh
 
 O script será instalado em /usr/local/sbin/gopro
 
 3. Dependências Necessárias
 Antes de usar, instale os seguintes pacotes:
 
--> sudo apt install ffmpeg v4l2loopback-dkms curl vlc
+> sudo apt install ffmpeg v4l2loopback-dkms curl vlc
 
 Se sua distribuição não tiver o v4l2loopback-dkms, instale manualmente pelo link:
 https://github.com/umlaeute/v4l2loopback
 
 Além disso, libere a porta 8554/UDP no firewall:
 
--> sudo firewall-cmd --add-port=8554/udp
--> sudo firewall-cmd --add-port=8554/udp --permanent
+> sudo firewall-cmd --add-port=8554/udp
+> sudo firewall-cmd --add-port=8554/udp --permanent
 
 4. Modo de Uso
 Para iniciar o modo webcam de forma interativa:
